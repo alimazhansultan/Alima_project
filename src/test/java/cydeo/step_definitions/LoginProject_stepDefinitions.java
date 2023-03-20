@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -60,9 +61,9 @@ public class LoginProject_stepDefinitions {
     @Then("User sees the Wrong login and password message displayed")
     public void user_sees_the_wrong_login_password_message_displayed() throws InterruptedException {
         WebElement wrongCredentialsMessage = Driver.getDriver().findElement(By.cssSelector("p[class='alert alert-danger']"));
-        if(wrongCredentialsMessage.isDisplayed()){
+        if (wrongCredentialsMessage.isDisplayed()) {
             System.out.println("User see wrong credentials message");
-        }else {
+        } else {
             System.out.println("User cant see the message");
         }
 
@@ -80,5 +81,17 @@ public class LoginProject_stepDefinitions {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-}
 
+
+    @Then("User can see bullet signs by default")
+    public void user_can_see_bullet_signs_by_default() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @Then("User clicks enter button")
+    public void user_clicks_enter_button() {
+        WebElement loginButton = Driver.getDriver().findElement(By.cssSelector("div[class='clearfix oe_login_buttons'] button"));
+        loginButton.sendKeys(Keys.RETURN);
+    }
+
+}
