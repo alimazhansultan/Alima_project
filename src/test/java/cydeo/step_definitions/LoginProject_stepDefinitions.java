@@ -4,6 +4,7 @@ import cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -76,10 +77,16 @@ public class LoginProject_stepDefinitions {
         emailField.sendKeys(email);
     }
 
-    @Then("User should see message {string}")
-    public void user_should_see_message(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("User should see message")
+    public void user_should_see_message() {
+        Assert.assertTrue(Driver.getDriver().findElement(By.id("password")).getText().isEmpty());
+
+        boolean required = Boolean.parseBoolean(Driver.getDriver().findElement(By.id("password")).getAttribute("required"));
+        Assert.assertTrue(required);
+
+        String validationMsg = Driver.getDriver().findElement(By.id("password")).getAttribute("validationMessage");
+        System.out.println(validationMsg);
+        Assert.assertEquals( "Please fill out this field.", validationMsg);
     }
 
 
