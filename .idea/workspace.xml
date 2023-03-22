@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb264114-fa6a-4f18-bc3c-03fba711f752" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LoginProject_stepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LoginProject_stepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/fill_out_this_field.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/fill_out_this_field.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/bullet_signs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login/bullet_signs.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/enter_button.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login/enter_button.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/fill_out_this_field.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login/fill_out_this_field.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login_with_valid_credentials.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login/login_with_valid_credentials.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/wrong_login_password.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login/wrong_login_password.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -128,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679340103522</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1679348934461</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679348934461</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
