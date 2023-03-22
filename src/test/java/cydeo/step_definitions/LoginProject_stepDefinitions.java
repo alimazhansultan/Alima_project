@@ -21,6 +21,7 @@ public class LoginProject_stepDefinitions {
         driver.get("https://qa.upgenix.net/web/login/");
     }
 
+
     @When("User enters valid credentials")
     public void user_enters_valid_credentials() {
         WebElement email = Driver.getDriver().findElement(By.id("login"));
@@ -54,7 +55,6 @@ public class LoginProject_stepDefinitions {
 
         WebElement emailTextbox = Driver.getDriver().findElement(By.id("login"));
         emailTextbox.sendKeys(email);
-
         WebElement passwordTextbox = Driver.getDriver().findElement(By.id("password"));
         passwordTextbox.sendKeys(password);
     }
@@ -92,9 +92,15 @@ public class LoginProject_stepDefinitions {
 
     @Then("User can see bullet signs by default")
     public void user_can_see_bullet_signs_by_default() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+        WebElement passwordTextbox = Driver.getDriver().findElement(By.id("password"));
+              if(passwordTextbox.getAttribute("type").equals("password")){
+                Assert.assertTrue(true);
+            }else {
+                Assert.assertTrue(false);
+            }
+
+        }
+
     @Then("User clicks enter button")
     public void user_clicks_enter_button() {
         WebElement loginButton = Driver.getDriver().findElement(By.cssSelector("div[class='clearfix oe_login_buttons'] button"));
