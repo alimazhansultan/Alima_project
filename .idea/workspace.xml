@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb264114-fa6a-4f18-bc3c-03fba711f752" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cydeo/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Logout/logout_endsup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Logout/logout_functionality.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Logout/logout_functionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Logout/logout_functionality.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679595348555</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1679684404292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679684404292</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +241,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java</url>
-          <line>40</line>
+          <line>37</line>
           <properties class="cydeo.step_definitions.LogoutProject_stepDefinitions" method="user_click_to_his_own_username">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
