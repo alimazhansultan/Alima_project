@@ -16,5 +16,8 @@ public class HomePage {
     @FindBy(xpath = "//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[2]/li/ul/li[6]/a")
     public WebElement logOutButton;
 
+    @FindBy(css = "div.o_dialog_warning.modal-body")
+    public WebElement sessionExpiredMsg;
+
 
 }

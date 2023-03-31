@@ -2,17 +2,23 @@ package cydeo.step_definitions;
 
 import cydeo.pages.HomePage;
 import cydeo.pages.LoginPage;
+import cydeo.utilities.BrowserUtils;
 import cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.Command;
 
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class LogoutProject_stepDefinitions {
 
+    Actions actions = new Actions(Driver.getDriver());
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
     WebDriver driver = Driver.getDriver();
@@ -56,13 +62,21 @@ public class LogoutProject_stepDefinitions {
     }
 
     @Then("can not go to the home page again.")
-    public void can_not_go_to_the_home_page_again() {
-        Assert.assertFalse(homePage.usernameButton.isDisplayed());
+    public void can_not_go_to_the_home_page_again() throws InterruptedException {
+        Assert.assertTrue(homePage.sessionExpiredMsg.isDisplayed());
     }
 
     @When("User closes tab")
     public void user_closes_tab() {
+        String currentWindow = Driver.getDriver().getWindowHandle();
+
+        //to open a new window
+        actions.sendKeys(Keys.COMMAND + "N");
+
+        String newWindow = Driver.getDriver().getWindowHandle();
+        driver.switchTo().window(currentWindow);
         driver.close();
+        driver.switchTo().window(newWindow);
     }
 
     @When("User navigates back to homepage")
@@ -72,7 +86,7 @@ public class LogoutProject_stepDefinitions {
 
     @Then("User must be logged out")
     public void user_must_be_logged_out() {
-        Assert.assertFalse(homePage.usernameButton.isDisplayed());
+        Assert.assertTrue(homePage.sessionExpiredMsg.isDisplayed());
     }
 
 }

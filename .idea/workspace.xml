@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb264114-fa6a-4f18-bc3c-03fba711f752" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cydeo/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cydeo/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cydeo/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cydeo/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cydeo/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login/login_functionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login/login_functionality.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Logout/logout_functionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Logout/logout_functionality.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +36,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -48,30 +51,10 @@
       <recent name="$PROJECT_DIR$/src/test/resources/features/Login" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: User must be logged out if the user closes the open tab">
+  <component name="RunManager" selected="JUnit.CukesRunner">
     <configuration name="Scenario: User can log out and ends up in login page. (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Logout/logout_functionality.feature" />
-      <option name="GLUE" value="cydeo.step_definitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Alima_project" />
-      <option name="NAME_FILTER" value="^User can log out and ends up in login page\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User can log out and ends up in login page\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User can log out and ends up in login page." />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: User can log out and ends up in login page." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Logout/logout_endsup.feature" />
       <option name="GLUE" value="cydeo.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Alima_project" />
@@ -149,13 +132,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Alima_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cydeo.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cydeo.runners" />
+      <option name="MAIN_CLASS_NAME" value="cydeo.runners.CukesRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CukesRunner" />
         <item itemvalue="Cucumber Java.Scenario: User must be logged out if the user closes the open tab" />
-        <item itemvalue="Cucumber Java.Scenario: User can log out and ends up in login page. (1)" />
         <item itemvalue="Cucumber Java.Scenario: User can not go to the home page again by clicking the step back button after successfully logged out" />
+        <item itemvalue="Cucumber Java.Scenario: User can log out and ends up in login page. (1)" />
         <item itemvalue="Cucumber Java.Scenario: " />
-        <item itemvalue="Cucumber Java.Scenario: User can log out and ends up in login page." />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679684404292</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1679891785666</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679891785666</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,12 +246,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java</url>
-          <line>37</line>
+          <line>43</line>
           <properties class="cydeo.step_definitions.LogoutProject_stepDefinitions" method="user_click_to_his_own_username">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cydeo/step_definitions/LogoutProject_stepDefinitions.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
